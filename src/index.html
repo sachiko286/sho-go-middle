@@ -6,8 +6,8 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
+  <title>千葉県香取市の芋村いもこ農家</title>
+  <meta name="description" content="「芋村いもこ農家」は3世代に渡り大自然の中で大切にサツマイモを育てている農家です" />
   <meta name="keywords" content="" />
   <!-- ogp -->
   <meta property="og:title" content="" />
@@ -21,6 +21,8 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- css -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -28,62 +30,228 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-
+  <header class="header">
+    <div class="header__inner">
+        <div class="header__title-content">
+          <div class="header__title-text">自然の恵に囲まれて</div>
+          <div class="header__title-text">芋を愛し、芋と共に</div>
+          <div class="header__title-text">生きる</div>
+        </div>
+      </div>
   </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+
+
+  <div class="drawer hamburger 
+      js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+  </div>
+
+  <nav class="pc-nav">
+    <div class="pc-nav-inner">
+      <div class="pc-nav__logo">
+        <div class="pc-nav-logo-img">
+          <img src="./assets/images/common/logo.png" alt="#">
+        </div>
+      </div>
+      <div class="pc-nav__list">
+        <a href="#">
+          <div class="pc-nav__list-name-img">
+            <img src="./assets/images/common/logotext.png" alt="#">
+          </div>
+        </a>
+        <div class="pc-nav__list-content">
+          <ul class="pc-nav__list-items pc-nav__list-left">
+            <li class="pc-nav__list-item "><a href="#">この農家について</a></li>
+            <li class="pc-nav__list-item "><a href="#">商品一覧</a></li>
+            <li class="pc-nav__list-item "><a href="#">お知らせ</a></li>
+          </ul>
+          <ul class="pc-nav__list-items pc-nav__list-rigth">
+            <li class="pc-nav__list-item "><a href="#">FAQ</a></li>
+            <li class="pc-nav__list-item "><a href="#">アクセス</a></li>
+            <li class="pc-nav__list-item "><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
+  <nav class="sp-nav js-sp-nav">
+    <div class="sp-nav-inner">
+      <div class="sp-nav__logo">
+        <div class="sp-nav-logo-img">
+          <img src="./assets/images/common/logo.png" alt="#">
+        </div>
+      </div>
+      <div class="sp-nav__list">
+        <a href="#">
+          <div class="sp-nav__list-name-img">
+            <img src="./assets/images/common/logotext.png" alt="#">
+          </div>
+        </a>
+      </div>
+      <ul class="sp-nav__list-items">
+        <li class="sp-nav__list-item "><a href="#">この農家について</a></li>
+        <li class="sp-nav__list-item "><a href="#">商品一覧</a></li>
+        <li class="sp-nav__list-item "><a href="#">お知らせ</a></li>
+        <li class="sp-nav__list-item "><a href="#">FAQ</a></li>
+        <li class="sp-nav__list-item "><a href="#">アクセス</a></li>
+        <li class="sp-nav__list-item "><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="about">
+    <div class="about__inner inner">
+      <div class="about__text-content">
+        <div class="about__title">大自然で育つ力を、そのままで届けたい</div>
+        <p class="about__text">
+          芋村いもこ農家は、サツマイモの栽培に情熱を注ぎ、
+          伝統的な農法と最新の持続可能な農業技術を組み合わせています。<br class="blank">
+          地元の気候や土壌の特性を理解を深め、サツマイモの品質を向上するよう日々努力し、
+          農薬や化学肥料の最小使用を奨励、有機農法にも積極的に取り組んでいます。<br class="blank">
+          芋村いもこ農家では、さまざまなサツマイモ品種を栽培し、
+          それぞれの特徴を活かした生産を行っています。<br class="blank">
+          特に、甘くて風味豊かな「コットンスイート」や「紅えみか」の栽培に定評があり、
+          地元の市場や飲食店から高い評価を受けています。これらのサツマイモは、焼いて食べるだけでなく、
+          さまざまな料理にも活用され、地元コミュニティにおいしい食材を提供しています。<br class="blank">
+          地元の農産物の振興と地域経済への貢献にも熱心で、
+          地元の農業フェスティバルやマーケットに参加したり、
+          次世代の農業者を育てるためのプログラムにも積極的に協力しています。
+        </p>
+      </div>
+      <div class="about__image-content">
+        <div class="about__imege-one">
+          <img src="./assets/images/common/childimohori.png" alt="#">
+        </div>
+        <div class="about__imege-sec">
+          <img src="./assets/images/common/imohoribatake.png" alt="#">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="prodaut__inner">
+      <div class="prodaut-title">
+        <h2 class="title-text">商品一覧</h2>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/hoshiimo.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">熟成されたサツマイモを使用し、甘味が凝縮されたほしいもに仕上がりました。3kg</p>
+                  <p class="product-price">￥2,700（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/chips.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg</p>
+                  <p class="product-price">￥1,800（税込）</p>
+                </div>
+              </a>              
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/cottonsw.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">「コットンスイート」は、甘くクリーミーで、口溶けの良い甘さと風味が楽しめます。5kg</p>
+                  <p class="product-price">￥3,700（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/beniemika.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">「紅えみか」は甘くて栄養価が高く、焼いたり、蒸したりして美味しく食べられます。5kg</p>
+                  <p class="product-price">￥3,800（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                  <img class="product-img" src="./assets/images/common/ykiimo.jpg" alt="#">
+                  <div class="product-content">
+                  <p class="product-text">低温でじっくり焼き上げ、ねっとり、あま～く焼き上げた自慢の焼き芋。1kg</p>
+                  <p class="product-price">￥2,200（税込）</p>
+                </div>
+              </a>             
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/hoshiimo.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">熟成されたサツマイモを使用し、甘味が凝縮されたほしいもに仕上がりました。3kg</p>
+                  <p class="product-price">￥2,700（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/chips.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg</p>
+                  <p class="product-price">￥1,800（税込）</p>
+                </div>
+              </a>              
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/cottonsw.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">「コットンスイート」は、甘くクリーミーで、口溶けの良い甘さと風味が楽しめます。5kg</p>
+                  <p class="product-price">￥3,700（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                <img class="product-img" src="./assets/images/common/beniemika.jpg" alt="#">
+                <div class="product-content">
+                  <p class="product-text">「紅えみか」は甘くて栄養価が高く、焼いたり、蒸したりして美味しく食べられます。5kg</p>
+                  <p class="product-price">￥3,800（税込）</p>
+                </div>
+              </a>               
+            </div>
+            <div class="swiper-slide product-card">
+              <!-- スライドの中身 -->
+              <a href="#">
+                  <img class="product-img" src="./assets/images/common/ykiimo.jpg" alt="#">
+                  <div class="product-content">
+                  <p class="product-text">低温でじっくり焼き上げ、ねっとり、あま～く焼き上げた自慢の焼き芋。1kg</p>
+                  <p class="product-price">￥2,200（税込）</p>
+                </div>
+              </a>             
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <main>
+
 
 
 
     
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog01.jpg"
-        alt=""
-      />
-    </div>
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog02.jpg"
-        alt=""
-      />
-    </div>
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog03.jpg"
-        alt=""
-      />
-    </div>
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/08/dog04.jpg"
-        alt=""
-      />
-    </div>
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/08/dog05.jpg"
-        alt=""
-      />
-    </div>
-    <div class="swiper-slide">
-      <img
-        src="https://junpei-sugiyama.com/wp-content/uploads/2021/08/dog06.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <!-- ページネーション -->
-  <div class="swiper-pagination"></div>
-  <!-- 前後の矢印 -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
 
 
 
