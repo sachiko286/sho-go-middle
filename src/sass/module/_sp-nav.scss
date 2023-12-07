@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.sp-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    z-index: 2;
+}
+
+.sp-nav-inner {
+    margin-top: rem(61);
+}
+.sp-nav__logo {
+    background-color: #fdefef;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-nav__list-name-img{
+    width: 300px;
+    margin-inline: auto;
+}
+
+.sp-nav__list-items {
+    font-size: rem(16);
+    font-weight: 700;
+    margin-top: rem(36);
+}
+
+.sp-nav__list-item + .sp-nav__list-item {  
+    margin-top: rem(16);
+}
+
+

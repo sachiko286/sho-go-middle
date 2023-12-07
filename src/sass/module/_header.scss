@@ -1,0 +1,62 @@
+@use "global" as *;
+
+
+.header {
+    background-image: url("../images/common/fvimo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // aspect-ratio: 1280 / 854;
+    height: rem(854);
+    @include mq(sm) {
+        height: 667px;
+    }
+}
+
+.header__inner {
+    position: relative;
+}
+.header__title-content {
+    position: absolute;
+    top: rem(112);
+    right: rem(142);
+    writing-mode:vertical-rl;
+    height: rem(432);
+    @include mq(lg){
+        right: rem(50);
+    }
+    @include mq(sm) {
+        position: absolute;
+        top: rem(423);
+        left: rem(33);
+        writing-mode: horizontal-tb;
+        width: rem(230);
+        height: auto;    
+    }
+}
+
+.header__title-text {
+    color: $bw;
+    font-size: rem(32);
+    font-weight: 700;
+    background-color: $white;
+    display: inline-block;
+    padding: rem(16) rem(15) 0;
+    letter-spacing: rem(14);
+    line-height: 1;
+    @include mq(sm) {
+        font-size: rem(24);
+        padding: rem(7);
+        letter-spacing: 0;
+
+
+    }
+}
+
+.header__title-text + .header__title-text {
+    margin-right: rem(21);
+    @include mq(sm) {
+        margin-right: 0;
+        margin-top: rem(6);
+    }
+}

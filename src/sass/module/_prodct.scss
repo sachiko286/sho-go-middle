@@ -1,0 +1,54 @@
+@use "global" as *;
+
+
+.product {
+    margin-top: rem(126);
+    padding-bottom: rem(94);
+}
+
+.prodaut-title {
+    text-align: center;
+}
+
+.swiper-container {
+    margin-top: rem(91);
+}
+
+.product-card  {
+    max-width: rem(264);
+    height: auto;
+    display: flex;
+    // flex-direction: column;
+    background-color: $white;
+    background: #FFF;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.product-card a {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img {
+    aspect-ratio: 264 / 166;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-content  {
+    padding: rem(16);
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-text {
+    flex-grow: 1;
+    font-size: rem(16);
+    font-weight: bold;
+}
+
+.product-price {
+    margin-top: rem(14);
+    font-size: rem(16);
+}

@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.pc-nav-inner {
+    // 
+    padding: 0 rem(10);
+    margin-inline: auto;
+}
+.pc-nav__logo {
+    background-color: #fdefef;
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -77px;
+}
+
+.pc-nav-logo-img {
+    align-items: center;
+}
+
+.pc-nav-logo-img img {
+    width: 96px;
+    height: 96px;
+}
+
+.pc-nav__list {
+    margin-top: rem(-30);
+}
+
+.pc-nav__list-name-img{
+    width: rem(300);
+    margin-inline: auto;
+}
+.pc-nav__list-name-img img {
+    display: inline;
+}
+
+.pc-nav__list-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(-60);
+    @include mq(lg) {
+        justify-content: center;
+        margin-top: 0;
+    }
+    @include mq(md) {
+        display: none;
+    }
+}
+.pc-nav__list-items {
+    display: flex;
+    font-size: rem(16);
+    font-weight: 700;
+    width: 38%;
+    @include mq(lg) {
+        width: auto;
+        // font-size: rem(16)
+    }
+}
+
+.pc-nav__list-left li {  
+    margin-right: rem(39);
+}
+
+.pc-nav__list-rigth li {
+    margin-left: rem(39);
+}
+
+.pc-nav__list-left {
+    justify-content: end;
+}
+
+.pc-nav__list-left li:last-child {
+    @include mq(lg) {
+        margin-right: 0;
+    }
+}
