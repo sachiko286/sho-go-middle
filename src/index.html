@@ -19,14 +19,17 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="#" />
   <!-- swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
   <!-- css -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script defer src="./assets/js/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -189,56 +192,6 @@
                 </div>
               </a>             
             </div>
-            <div class="swiper-slide product-card">
-              <!-- スライドの中身 -->
-              <a href="#">
-                <img class="product-img" src="./assets/images/common/hoshiimo.jpg" alt="#">
-                <div class="product-content">
-                  <p class="product-text">熟成されたサツマイモを使用し、甘味が凝縮されたほしいもに仕上がりました。3kg</p>
-                  <p class="product-price">￥2,700（税込）</p>
-                </div>
-              </a>               
-            </div>
-            <div class="swiper-slide product-card">
-              <!-- スライドの中身 -->
-              <a href="#">
-                <img class="product-img" src="./assets/images/common/chips.jpg" alt="#">
-                <div class="product-content">
-                  <p class="product-text">噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg噛めば噛むほどうま味が広がるサツマイモチップス。お子様のおやつにも。1kg</p>
-                  <p class="product-price">￥1,800（税込）</p>
-                </div>
-              </a>              
-            </div>
-            <div class="swiper-slide product-card">
-              <!-- スライドの中身 -->
-              <a href="#">
-                <img class="product-img" src="./assets/images/common/cottonsw.jpg" alt="#">
-                <div class="product-content">
-                  <p class="product-text">「コットンスイート」は、甘くクリーミーで、口溶けの良い甘さと風味が楽しめます。5kg</p>
-                  <p class="product-price">￥3,700（税込）</p>
-                </div>
-              </a>               
-            </div>
-            <div class="swiper-slide product-card">
-              <!-- スライドの中身 -->
-              <a href="#">
-                <img class="product-img" src="./assets/images/common/beniemika.jpg" alt="#">
-                <div class="product-content">
-                  <p class="product-text">「紅えみか」は甘くて栄養価が高く、焼いたり、蒸したりして美味しく食べられます。5kg</p>
-                  <p class="product-price">￥3,800（税込）</p>
-                </div>
-              </a>               
-            </div>
-            <div class="swiper-slide product-card">
-              <!-- スライドの中身 -->
-              <a href="#">
-                  <img class="product-img" src="./assets/images/common/ykiimo.jpg" alt="#">
-                  <div class="product-content">
-                  <p class="product-text">低温でじっくり焼き上げ、ねっとり、あま～く焼き上げた自慢の焼き芋。1kg</p>
-                  <p class="product-price">￥2,200（税込）</p>
-                </div>
-              </a>             
-            </div>
           </div>
         </div>
       </div>
@@ -276,6 +229,67 @@
           </a>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq__inner">
+      <div class="faq__title">
+        <h2 class="title-text">FAQ</h2>
+      </div>
+      <ul class="faq__list">
+        <li class="faq__list-item">
+          <h3 class="faq__list-title  js-faq__list-title"><span>Q</span>キャンセルは可能ですか？</h3>
+          <p class="faq__list-answer">発送前であればキャンセルは可能です。</p>
+        </li>
+        <li class="faq__list-item">
+          <h3 class="faq__list-title  js-faq__list-title"><span>Q</span>どのような支払い方法がありますか？</h3>
+          <p class="faq__list-answer">商品代引きとクレジットカード決済があります。代引き手数料は、10,800円未満で税込330円・10,800円以上32,400円未満で税込440円・32,400円以上102,400円未満で税込660円です。手数料はお客様のご負担となりますのでご了承ください。クレジットカード決済は、JCB・VISA・master・ダイナース・アメリカンエキスプレスのマークが入っているカードすべてご利用になれます。</p>
+        </li>
+        <li class="faq__list-item">
+          <h3 class="faq__list-title  js-faq__list-title"><span>Q</span>贈答用することはできますか？</h3>
+          <p class="faq__list-answer">可能です。熨斗等が必要な場合は、購入時にフォームの「熨斗希望」にチェックを入れ水引を選択し、備考欄に表書き・名入れをご記入ください</p>
+        </li>
+        <li class="faq__list-item">
+          <h3 class="faq__list-title  js-faq__list-title"><span>Q</span>イモ掘り体験の予約は必要ですか？</h3>
+          <p class="faq__list-answer">必要です。ご予約をしてお越しください。</p>
+        </li>
+        <li class="faq__list-item">
+          <h3 class="faq__list-title  js-faq__list-title"><span>Q</span>海外発送できますか？</h3>
+          <p class="faq__list-answer">大変申し訳ございませんが、食品の為、対応出来かねます。。海外からのご注文で日本国内への発送は承っております。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact__inner">
+      <div class="contact__title">
+        <h2 class="title-text">アクセス</h2>
+      </div>
+      <div class="contact__wrapper">
+        <div class="contact__items">
+          <dl class="contact__item">
+            <dt>会社名</dt>
+            <dd>芋村いもこ農家</dd>
+          </dl>
+          <dl class="contact__item">
+            <dt>代表者名</dt>
+            <dd>芋村五百子</dd>
+          </dl>
+          <dl class="contact__item">
+            <dt>所在地</dt>
+            <dd>千葉県香取市×××××</dd>
+          </dl>
+          <dl class="contact__item">
+            <dt>E-mail</dt>
+            <dd>imomura-noka@gmail.com</dd>
+          </dl>
+        </div>
+        <div class="contact__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206957.103809836!2d140.37306352584875!3d35.85624268343538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022f99235ae35d3%3A0x50211bfba63438!2z5Y2D6JGJ55yM6aaZ5Y-W5biC!5e0!3m2!1sja!2sjp!4v1699187581126!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
