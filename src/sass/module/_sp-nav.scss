@@ -10,14 +10,13 @@
     height: 100vh;
     background: rgba(255, 255, 255, 0.90);
     text-align: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .sp-nav-inner {
     margin-top: rem(61);
 }
 .sp-nav__logo {
-    background-color: #fdefef;
     width: 55px;
     height: 55px;
     border-radius: 50%;

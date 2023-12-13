@@ -1,0 +1,51 @@
+@use "global" as *;
+
+
+.catch__item-right {
+    position: absolute;
+    right: 0;
+    margin-top: rem(-77);
+    @include mq(md) {
+        margin-top: rem(-45);
+    }
+}
+
+.catch__item-left {
+    position: absolute;
+    margin-top: rem(-77);
+    @include mq(md) {
+        margin-top: rem(-45);
+    }
+}
+
+.catch__item-right img,
+.catch__item-left img {
+    max-width: rem(264);
+    object-fit: cover;
+    width: 100%;
+    display: inline-block;
+    @include mq(md) {
+        max-width: rem(150);
+    }
+}
+
+.catch__item-right.footer-img img,
+.catch__item-left.footer-img img {
+    @include mq(lg) {
+        max-width: rem(200);
+    }   
+    @include mq(md) {
+        max-width: rem(150);
+    }
+}
+
+.catch__item-right.footer-img,
+.catch__item-left.footer-img {
+    @include mq(lg) {
+        margin-top: rem(-40);
+    }
+    @include mq(md) {
+        margin-top: rem(-5);
+
+    }
+}

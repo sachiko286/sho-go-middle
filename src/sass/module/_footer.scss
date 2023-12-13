@@ -1,0 +1,60 @@
+@use "global" as *;
+
+
+.footer {
+    background-color: #fff;
+}
+
+.footer__inner {
+    padding-top: rem(24);
+}
+
+.footer__logo-img {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__list-name-img{
+    width: rem(300);
+    margin-inline: auto;
+}
+
+.footer__list-content {
+    margin-top: rem(33);
+}
+
+.footer__list-items {
+    display: flex;
+    justify-content: center;
+    @include mq(md) {
+        flex-direction: column;
+        align-items: center ;
+    }
+}
+
+.footer__list-item {
+    font-size: rem(16);
+    font-weight: bold;
+}
+
+.footer__list-item + .footer__list-item {
+    margin-left: rem(24);
+    @include mq(md) {
+        margin-left: rem(0);
+        margin-top: rem(15);
+    }
+}
+
+.footer__copy {
+    margin-top: rem(94);
+    background-color: #D9D9D9;
+    font-size: rem(12);
+    text-align: center;
+    padding: rem(22) 0;
+}

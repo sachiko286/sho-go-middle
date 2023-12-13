@@ -33,6 +33,15 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+<!-- ローディング画面 -->
+  <div id="loadingWrap">
+    <div id="loading">
+      <img src="./assets/images/common/logo.png" alt="#">
+    </div>
+  </div>
+
+  
+  <!-- fv -->
   <header class="header">
     <div class="header__inner">
         <div class="header__title-content">
@@ -43,14 +52,14 @@
       </div>
   </header>
 
-
+  <!-- ハンバーガーメニュー -->
   <div class="drawer hamburger 
       js-hamburger">
         <span></span>
         <span></span>
         <span></span>
   </div>
-
+  <!-- pcナビゲーション レイアウト-->
   <nav class="pc-nav">
     <div class="pc-nav-inner">
       <div class="pc-nav__logo">
@@ -59,26 +68,25 @@
         </div>
       </div>
       <div class="pc-nav__list">
-        <a href="#">
-          <div class="pc-nav__list-name-img">
-            <img src="./assets/images/common/logotext.png" alt="#">
-          </div>
-        </a>
+        <div class="pc-nav__list-name-img">
+          <img src="./assets/images/common/logotext.png" alt="#">
+        </div>
         <div class="pc-nav__list-content">
           <ul class="pc-nav__list-items pc-nav__list-left">
-            <li class="pc-nav__list-item "><a href="#">この農家について</a></li>
-            <li class="pc-nav__list-item "><a href="#">商品一覧</a></li>
-            <li class="pc-nav__list-item "><a href="#">お知らせ</a></li>
+            <li class="pc-nav__list-item "><a href="#about">この農家について</a></li>
+            <li class="pc-nav__list-item "><a href="#product">商品一覧</a></li>
+            <li class="pc-nav__list-item "><a href="#news">お知らせ</a></li>
           </ul>
           <ul class="pc-nav__list-items pc-nav__list-rigth">
-            <li class="pc-nav__list-item "><a href="#">FAQ</a></li>
-            <li class="pc-nav__list-item "><a href="#">アクセス</a></li>
-            <li class="pc-nav__list-item "><a href="#">お問い合わせ</a></li>
+            <li class="pc-nav__list-item "><a href="#faq">FAQ</a></li>
+            <li class="pc-nav__list-item "><a href="#company">アクセス</a></li>
+            <li class="pc-nav__list-item "><a href="#contact">お問い合わせ</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+  <!-- spナビゲーション レイアウト-->
   <nav class="sp-nav js-sp-nav">
     <div class="sp-nav-inner">
       <div class="sp-nav__logo">
@@ -94,17 +102,17 @@
         </a>
       </div>
       <ul class="sp-nav__list-items">
-        <li class="sp-nav__list-item "><a href="#">この農家について</a></li>
-        <li class="sp-nav__list-item "><a href="#">商品一覧</a></li>
-        <li class="sp-nav__list-item "><a href="#">お知らせ</a></li>
-        <li class="sp-nav__list-item "><a href="#">FAQ</a></li>
-        <li class="sp-nav__list-item "><a href="#">アクセス</a></li>
-        <li class="sp-nav__list-item "><a href="#">お問い合わせ</a></li>
+        <li class="sp-nav__list-item "><a href="#about">この農家について</a></li>
+        <li class="sp-nav__list-item "><a href="#product">商品一覧</a></li>
+        <li class="sp-nav__list-item "><a href="#news">お知らせ</a></li>
+        <li class="sp-nav__list-item "><a href="#faq">FAQ</a></li>
+        <li class="sp-nav__list-item "><a href="#company">アクセス</a></li>
+        <li class="sp-nav__list-item "><a href="#contact">お問い合わせ</a></li>
       </ul>
     </div>
   </nav>
   
-  <section class="about">
+  <section id="about"  class="about">
     <div class="about__inner inner">
       <div class="about__text-content">
         <div class="about__title">大自然で育つ力を、そのままで届けたい</div>
@@ -134,7 +142,7 @@
     </div>
   </section>
 
-  <section class="product">
+  <section class="product" id="product">
     <div class="prodaut__inner">
       <div class="prodaut-title">
         <h2 class="title-text">商品一覧</h2>
@@ -198,7 +206,7 @@
     </div>
   </section>
 
-  <section class="news">
+  <section class="news" id="news">
     <div class="news__inner">
       <div class="news__title">
         <h2 class="title-text">お知らせ</h2>
@@ -232,7 +240,13 @@
     </div>
   </section>
 
-  <section class="faq">
+  <div class="catch">
+    <div class="catch__item-right">
+      <img src="./assets/images/common/sweetpoteto.png" alt="スイートポテト画像">
+    </div>
+  </div>
+
+  <section class="faq" id="faq">
     <div class="faq__inner">
       <div class="faq__title">
         <h2 class="title-text">FAQ</h2>
@@ -262,36 +276,155 @@
     </div>
   </section>
 
-  <section class="contact">
-    <div class="contact__inner">
-      <div class="contact__title">
+  <div class="catch">
+    <div class="catch__item-left">
+      <img src="./assets/images/common/imoyoukan.png" alt="芋ようかん画像">
+    </div>
+  </div>
+
+  <section class="company" id="company">
+    <div class="company__inner">
+      <div class="company__title">
         <h2 class="title-text">アクセス</h2>
       </div>
-      <div class="contact__wrapper">
-        <div class="contact__items">
-          <dl class="contact__item">
+      <div class="company__wrapper">
+        <div class="company__items">
+          <dl class="company__item">
             <dt>会社名</dt>
             <dd>芋村いもこ農家</dd>
           </dl>
-          <dl class="contact__item">
+          <dl class="company__item">
             <dt>代表者名</dt>
             <dd>芋村五百子</dd>
           </dl>
-          <dl class="contact__item">
+          <dl class="company__item">
             <dt>所在地</dt>
             <dd>千葉県香取市×××××</dd>
           </dl>
-          <dl class="contact__item">
+          <dl class="company__item">
             <dt>E-mail</dt>
             <dd>imomura-noka@gmail.com</dd>
           </dl>
         </div>
-        <div class="contact__map">
+        <div class="company__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206957.103809836!2d140.37306352584875!3d35.85624268343538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022f99235ae35d3%3A0x50211bfba63438!2z5Y2D6JGJ55yM6aaZ5Y-W5biC!5e0!3m2!1sja!2sjp!4v1699187581126!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="catch">
+    <div class="catch__item-right">
+      <img src="./assets/images/common/torakku.png" alt="石焼き芋トラック画像">
+    </div>
+  </div>
+
+
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="company__title">
+        <h2 class="title-text">お問い合わせ</h2>
+      </div>
+      <p class="contact__text">
+        ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。
+      </p>
+      <form class="contact__form form" action="">
+        <div class="form__inner">
+        <h3 class="form__title">お問い合わせフォーム</h3>
+        <dl class="form__wrap">
+          <dt class="form__label">お問い合わせ種類<span>必須</span></dt>
+          <dd class="form__radio form-radio">
+            <label><input type="radio" name="category" required value="弊社商品について" ><span>弊社商品について</span></label>
+            <label><input type="radio" name="category" required value="イモ掘り体験について"><span>イモ掘り体験について</span></label>
+            <label><input type="radio" name="category" required value="その他のお問い合わせ" ><span>その他のお問い合わせ</span></label>
+          </dd>
+        </dl>
+
+        <dl class="form__wrap">
+          <dt class="form__label">お名前<span>必須</span></dt>
+          <dd class="form__input form-input">
+            <input type="text" required>
+          </dd>
+        </dl>
+        <dl class="form__wrap">
+          <dt class="form__label">郵便番号</dt>
+          <dd class="form__input form-input  form__post">
+            <input type="text">
+          </dd>
+        </dl>
+        <dl class="form__wrap">
+          <dt class="form__label">ご住所<span>必須</span></dt>
+          <dd class="form__input form-input">
+            <input type="text" required>
+          </dd>
+        </dl>
+        <dl class="form__wrap">
+          <dt class="form__label">メールアドレス<span>必須</span></dt>
+          <dd class="form__input form-input">
+            <input type="email" required>
+          </dd>
+        </dl>
+        <dl class="form__wrap">
+          <dt class="form__label">電話番号<span>必須</span></dt>
+          <dd class="form__input form-input">
+            <input type="tel" required>
+          </dd>
+        </dl>
+        <dl class="form__wrap form__wrap--textarea">
+          <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
+          <dd class="form__textarea form-textarea">
+            <textarea name="message" required></textarea>
+          </dd>
+        </dl>
+        <div class="form__submit form-submit">
+          <input type="submit" value="送信する">
+        </div>
+      </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <div class="footer__logo-img">
+          <img src="./assets/images/common/logo.png" alt="#">
+        </div>
+          <div class="footer__list-name-img">
+            <a href="#">
+            <img src="./assets/images/common/logotext.png" alt="#">
+            </a>
+          </div>
+      </div>
+      <div class="footer__list-content ">
+        <ul class="footer__list-items">
+          <li class="footer__list-item "><a href="#about">この農家について</a></li>
+          <li class="footer__list-item "><a href="#product">商品一覧</a></li>
+          <li class="footer__list-item "><a href="#news">お知らせ</a></li>        
+          <li class="footer__list-item "><a href="#faq">FAQ</a></li>
+          <li class="footer__list-item "><a href="#company">アクセス</a></li>
+          <li class="footer__list-item "><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+      <div class="catch">
+        <div class="catch__item-left footer-img">
+          <img src="./assets/images/common/daigakuiomo.png" alt="大学芋画像">
+        </div>
+      </div>
+      <div class="catch">
+        <div class="catch__item-right footer-img">
+          <img src="./assets/images/common/imogohan.png" alt="芋ご飯画像">
+        </div>
+      </div>
+        
+      <div class="footer__copy">
+        <div class="footer__copy-text">
+          &copy;2023 IMOMURAIMOKO.
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   

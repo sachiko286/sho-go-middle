@@ -5,6 +5,9 @@
     padding: rem(91) rem(25);
     max-width: rem(790);
     width: 100%;
+    @include mq(md) {
+        padding-top: rem(40);
+    }
 
 }
 
@@ -19,6 +22,9 @@
     padding-left: rem(14);
     font-size: rem(18);
     position: relative;
+    @include mq(md) {
+        font-size: rem(16);
+    }
 }
 
 .faq__list-item + .faq__list-item {
@@ -41,9 +47,8 @@
     border-right: rem(3) solid #C6C6C6;
     transform: translateY(-50%) rotate(135deg);
     transition: .2s;
-    @include mq(md){
-        width: rem(13);
-        height: rem(13);
+    @include mq(sm) {
+        right: rem(15);
     }
 }
 

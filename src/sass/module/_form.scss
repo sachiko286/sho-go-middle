@@ -1,0 +1,256 @@
+@use "global" as *;
+
+
+.form {
+    margin-top: rem(93);
+    border-radius: 20px;
+    background: #fff;
+    padding: rem(37) rem(76) rem(43);
+    @include mq(sm) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+.form__title {
+    text-align: center;
+    font-size: rem(18);
+    margin-top: rem(37);
+    margin-bottom: rem(41);
+}
+
+.form__wrap {
+    display: flex;
+    align-items: center;
+
+    @include mq(md) {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+.form__wrap:first-of-type {
+    align-items: normal;
+}
+
+
+.form__wrap.form__wrap--textarea {
+    align-items: flex-start;
+
+    @include mq(md) {}
+}
+
+.form__wrap+.form__wrap {
+    margin-top: rem(30);
+}
+
+.form__label {
+    max-width: rem(254);
+    width: 100%;
+    font-size: rem(15);
+    font-weight: 700;
+    // line-height: 1;
+    letter-spacing: 0.08em;
+
+    @include mq(md) {
+        max-width: none;
+
+    }
+}
+
+.form__wrap.form__wrap--textarea .form__label {
+    margin-top: rem(10);
+    @include mq(md){
+    }
+}
+
+.form__label span {
+    margin-left: rem(10);
+    padding: rem(5) rem(11);
+    display: inline-block;
+    font-size: rem(14);
+    background-color: $yl;
+    border-radius: rem(10);
+}
+
+.form__input,
+.form__radio,
+.form__textarea {
+    margin-top: 0;
+    @include mq(md) {
+        margin-top: rem(10);
+        width: 100%;
+    }
+}
+
+
+.form__input,
+.form__textarea {
+    flex-grow: 1;
+}
+
+.form__submit {
+    margin-top: rem(60);
+    text-align: center;
+}
+
+
+// form-input
+.form-input input {
+    padding: rem(8) rem(15);
+    width: 100%;
+    font-size: rem(15);
+    // line-height: 1;
+    border: 1px solid #EFEAE6;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border-radius: rem(5);
+    background-color: #EFEAE6;
+
+}
+
+.form-input input:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+
+// ■_form-radio.scss
+
+.form-radio label {
+    display: block;
+
+    @include mq(md) {}
+}
+
+.form-radio label:not(:first-of-type) {
+    margin-top: rem(10);
+
+    @include mq(md) {}
+}
+
+.form-radio input {
+    width: 3px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.form-radio input+span {
+    padding: 0 0 0 rem(25);
+    position: relative;
+    display: block;
+    font-size: rem(15);
+    // line-height: 1;
+    cursor: pointer;
+
+    @include mq(md) {
+        display: inline-block;
+    }
+}
+
+.form-radio input+span::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-radio input+span::after {
+content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 6px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.form-radio input:checked+span::after {
+    opacity: 1;
+}
+
+
+
+
+
+// ■_form-textarea.scss
+
+.form-textarea textarea {
+    padding: rem(8) rem(15);
+    width: 100%;
+    height: rem(150);
+    font-size: rem(15);
+    border: 1px solid #EFEAE6;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border-radius: rem(5);
+    background-color: #EFEAE6;
+}
+
+.form-textarea textarea:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+
+// ■_form-submit.scss
+
+.form-submit input {
+    padding: rem(13) rem(94);
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: bold;
+    // line-height: 1;
+    background-color: $yl;
+    background-image: none;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-submit input:hover,
+.form-submit input:focus {
+    outline: none;
+}
+
+.form-submit input:hover {
+    opacity: .8;
+
+    @include mq(md) {}
+}
+
+.form-submit input::-moz-foucus-inner {
+    padding: 0;
+    border: none;
+}
+
+.form__post input {
+    width: rem(157);
+}
+
+.form__inner {
+    @include mq(md) {
+        max-width: rem(400);
+        width: 100%;
+        margin-inline: auto;
+    }
+}

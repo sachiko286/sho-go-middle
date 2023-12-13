@@ -30,10 +30,12 @@
     //   font-size: vw(strip-unit($inner), 16);
     // }
 
-    //fontsizeが14px以下にしないようにする
+    // fontsizeが14px以下にしないようにする
     @media (max-width: $inner) {
       font-size: max(14px, vw(strip-unit($inner), 16));
     }
+
+
     
 
     @include mq("md") {

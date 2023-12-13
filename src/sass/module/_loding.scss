@@ -1,0 +1,46 @@
+@use "global" as *;
+
+
+    #loadingWrap {
+        width: 100%;
+        height: 100vh;
+        background: #fdefef;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    
+    #loading {
+        width: 5em;
+        height: 5em;
+        animation: loaderAnime 1.5s infinite linear;
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 11;
+    }
+            
+    @keyframes loaderAnime {
+        0% {
+        transform: rotateX(0deg);
+        }
+        100% {
+        transform: rotateX(360deg);
+        }
+    }
+            
+    
+            
+    @keyframes loadingAnime {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }

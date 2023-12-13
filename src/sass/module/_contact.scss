@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.contact__inner{
+    max-width: rem(790);
+    width: 100%;
+    padding: rem(104) rem(25) rem(30);
+    margin-inline: auto;
+}
+
+.contact__text {
+    text-align: center;
+    font-size: rem(18);
+    font-weight: bold;
+    margin-top: rem(67);
+
+}
+
