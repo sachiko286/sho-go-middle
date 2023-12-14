@@ -1,10 +1,17 @@
 @use "global" as *;
 
+.contact {
+    scroll-behavior: auto;
+}
+
 .contact__inner{
     max-width: rem(790);
     width: 100%;
     padding: rem(104) rem(25) rem(30);
     margin-inline: auto;
+    @include mq(md) {
+        padding-top: rem(40);
+    }
 }
 
 .contact__text {
